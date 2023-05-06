@@ -111,6 +111,7 @@ header {
 .cpf:hover {
     border-bottom: 1px solid #000;
 }
+
 .continuar {
     width: 18rem;
     border-radius: 3.125rem;
@@ -135,64 +136,63 @@ footer{
     color: #f1f1f1;
     display: flex;
     flex-direction: column;
-    padding: .0063rem 2.7rem;
 }
-footer ul li{
-    list-style: none;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-}
-footer li{
-    display: flex;
-    align-items: center;
-    padding-bottom: .5rem;
-    transition: opacity 0.2s ease-out;
-}
-footer li:hover {
+footer a:hover {
     color: #820ad1;
 }
 .menu-footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: 0 auto;
+    gap: 3rem;
+}
+.menu-footer a{
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    margin: .4rem 0;
+}
+.line1, .line2 {
+    display: flex;
     justify-content: space-between;
-    border: none;
-    border-bottom: 1px solid #575757;
+    gap: 6rem;
+    flex-direction: row;
 }
 .box {
-    width: 24%;
     padding: 1.7rem 0;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
 }
 .box h6 {
     font-size: 1rem;
     font-weight: 400;
     color: #979494;
-    padding-left: 2.5rem;
 }
 .box img{
     width: 10rem;
 }
 .copyright {
     display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border: none;
-    border-bottom: 1px solid #575757;
+    border-bottom: 1px solid #1f1f1f;
+    border-top: 1px solid #1f1f1f;
+    margin: 0 auto;
+    gap: 2rem;
+    width: 100%;
+    padding: 6rem 0;
 }
 .text-footer{
     flex:right;
 }
 .redes-sociais {
     display: flex;
+    justify-content: flex-end;
     width: 40%;
 }
 .redes img{
-    width: 1.25rem;
-}
-.idioma{
-    flex: flex-end;
+    width: 1.8rem;
+    margin: 0.2rem;
 }
